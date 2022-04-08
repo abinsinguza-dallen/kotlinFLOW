@@ -2,8 +2,7 @@ fun main(){
 oddNums()
     println(identity(arrayOf("patience","pascaline","speria","lucky")))
     robots(4)
-    robots(7)
-    robots(18)
+    robots(8)
     robots(30)
     figures()
 }
@@ -23,10 +22,13 @@ fun identity(names:Array<String>):Int{
 }
 fun robots(age:Int){
     if (age<6){
-        println("A bottle of fanta")
+        println("A glass of milk")
     }
-    else if (age>=6 && age<15){
-        println("A bottle of coco cola")
+    else if (age>6 && age<15){
+        println("A bottle fanta orange")
+    }
+    else{
+        println("A bottle of coca cola")
     }
 }
 fun figures(){
